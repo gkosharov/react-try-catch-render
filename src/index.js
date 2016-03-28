@@ -10,7 +10,7 @@ export default function tryCatch(React, ErrorHandler, handlerOptions) {
     }
     /**
      * Implementation of the try/catch wrapper
-     * @param  {[React.Component]} component The ES6 React.Component that contains the React lifecycle method.
+     * @param  {[React.Component]} component The ES6 React.Component
      */
     return function wrapWithTryCatch(Component) {
         const originalRender = Component.prototype.render;
