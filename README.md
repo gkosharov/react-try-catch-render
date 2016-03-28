@@ -3,6 +3,13 @@
 Utility which wraps your react components render method and renders an ErrorHandler component in place of the faulty one. 
 It is inspired by Dan Abramov's [react-transform-catch-errors](https://github.com/gaearon/react-transform-catch-errors)
 
+## Installation
+
+```
+npm install --save-dev react-try-catch-render
+```
+
+
 ## Usage
 
 ```
