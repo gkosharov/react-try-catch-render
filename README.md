@@ -36,3 +36,7 @@ class MyComponent extends React.Component {
 
 wrapWithTryCatch(React, MyErrorHandler, {error: "Some custom error message!"})(MyComponent);
 ```
+
+## License
+
+MIT
