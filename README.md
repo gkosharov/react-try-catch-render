@@ -34,8 +34,34 @@ class MyComponent extends React.Component {
 }
 
 
-wrapWithTryCatch(React, MyErrorHandler, {error: "Some custom error message!"})(MyComponent);
+export default wrapWithTryCatch(React, MyErrorHandler, {error: "Some custom error message!"})(MyComponent);
 ```
+
+or if you are into ES7 - by using babel-plugin-transform-decorators: 
+
+```
+import wrapWithTryCatch from 'react-try-catch-render'
+
+class MyErrorHandler extends React.Component {
+    render(){
+        return (
+            <div className="terrible-error">{this.props.error}<div>
+        );
+    }
+}
+
+@wrapWithTryCatch(React, MyErrorHandler, {error: "Some custom error message!"})
+export default class MyComponent extends React.Component {
+  
+  render(){
+  
+    throw new Error('Something went terribly worng inside this render');
+    
+    return <div>Hello</div>;
+  }
+}
+```
+
 
 ## License
 
