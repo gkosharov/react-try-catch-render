@@ -1,12 +1,12 @@
 /**
- * Created by g.kosharov on 28.3.2016 ã..
+ * Created by g.kosharov on 28.3.2016
  */
 export default function tryCatch(React, ErrorHandler, handlerOptions) {
     if (!React || !React.Component) {
         throw new Error('arguments[0] for react-try-catch-render does not look like React.');
     }
     if (typeof ErrorHandler !== 'function') {
-        throw new Error('arguments[1] for react-try-catch-render does not look like a React component.');
+        throw new Error('arguments[1] for react-try-catch-render does not look like a function.');
     }
     /**
      * Implementation of the try/catch wrapper

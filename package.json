@@ -1,6 +1,6 @@
 {
   "name": "react-try-catch-render",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React try cahtch catches errors inside React components render",
   "main": "lib/index.js",
   "files": [
